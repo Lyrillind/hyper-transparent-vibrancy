@@ -36,6 +36,16 @@ module.exports.decorateConfig = conf => {
       .hyper_main {
         background-color: ${makeTransparent(conf.backgroundColor, alpha)};
       }
+      .header_header {
+        background: transparent !important;
+        border-bottom: none !important;
+      }
+      .tab_tab.tab_active {
+        background-color: transparent !important;
+      }
+      .tab_tab.tab_hasActivity .tab_icon:hover {
+        background-color: transparent !important;
+      }
     `
   });
 };
